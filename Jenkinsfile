@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('git checkout') {
             steps {
                 git 'https://github.com/Sushmaa123/dynamic_application'
             }
