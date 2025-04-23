@@ -28,10 +28,10 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker-cred') {
-                       sh 'docker tag frontend sushmaagowdaa/frontend'
-                       sh 'docker tag backend sushmaagowdaa/backend'
-                       sh 'docker push sushmaagowdaa/frontend'
-                       sh 'docker push sushmaagowdaa/backend' 
+                       sh 'docker tag mern-app-frontend sushmaagowdaa/mern-app-frontend'
+                       sh 'docker tag mern-app-backend sushmaagowdaa/mern-app-backend'
+                       sh 'docker push sushmaagowdaa/mern-app-frontend'
+                       sh 'docker push sushmaagowdaa/mern-app-backend' 
                     }
                 }
             }
