@@ -9,7 +9,7 @@ pipeline {
                 git 'https://github.com/Sushmaa123/mern_application'
             }
         }
-        stage ('code analysis') {
+        stage ('sonar code analysis') {
             steps {
                 withSonarQubeEnv('sonar-server') {
                sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=mern-app \
